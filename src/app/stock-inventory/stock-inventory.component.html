@@ -1,0 +1,154 @@
+<div class="page-header card">
+    <div class="row align-items-end">
+        <div class="col-lg-8">
+            <div class="page-header-title">
+                <i class="icofont icofont-files bg-c-blue"></i>
+                <div class="d-inline">
+                    <h4>Stock Inventory</h4>
+                    <span>Control and oversee stock ordering inventory</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="page-header-breadcrumb">
+                <ul class="breadcrumb-title">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">
+                            <i class="icofont icofont-home"></i>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#!">Stock Inventory</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-6 col-xl-3">
+        <div class="card widget-card-1">
+            <div class="card-block-small">
+                <i class="icofont icofont-pie-chart bg-c-blue card1-icon"></i>
+                <span class="text-c-blue f-w-600">Total Items</span>
+                <h4>4500</h4>
+                <div>
+                    <span style="font-size:12px" class="f-left m-t-10 text-muted">
+    <i class="text-c-blue f-16 icofont icofont-warning m-r-10"></i>Total items in stock
+    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-xl-3">
+        <div class="card widget-card-1">
+            <div class="card-block-small">
+                <i class="icofont icofont-error bg-c-pink card1-icon"></i>
+                <span class="text-c-pink f-w-600">Out Of Stock</span>
+                <h4>12%</h4>
+                <div>
+                    <span style="font-size:12px" class="f-left m-t-10 text-muted">
+    <i class="text-c-pink f-16 icofont icofont-warning m-r-10"></i>Items currently Out Of Stock
+    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-xl-3">
+        <div class="card widget-card-1">
+            <div class="card-block-small">
+                <i class="icofont icofont-ui-check  bg-c-green card1-icon"></i>
+                <span class="text-c-green f-w-600">Very Fine Stock</span>
+                <h4>70%</h4>
+                <div>
+                    <span style="font-size:12px" class="f-left m-t-10 text-muted">
+    <i class="text-c-green f-16 icofont icofont-warning m-r-10"></i>Items in excellent condition
+    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-xl-3">
+        <div class="card widget-card-1">
+            <div class="card-block-small">
+                <i class="icofont icofont-warning-alt bg-c-yellow card1-icon"></i>
+                <span class="text-c-yellow f-w-600">Average Stock</span>
+                <h4>30%</h4>
+                <div>
+                    <span style="font-size:12px" class="f-left m-t-10 text-muted">
+    <i class="text-c-yellow f-16 icofont icofont-warning m-r-10"></i>Items in average condition
+    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="page-body">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="card">
+                <div class="card-header">
+                    <h5>Stock Inventory Data</h5><br><br>
+                    <div>
+                        <a style="margin-right:3px" href="#" class="btn btn-dropbox"><i class="icofont icofont-listine-dots"></i>All</a>
+                        <a style="margin-right:3px" href="#" class="btn btn-dropbox"><i class="icofont icofont-star"></i>New Stock</a>
+                        <a style="margin-right:3px" href="#" class="btn btn-dropbox"><i class="icofont icofont-bubble-down"></i>Low Stock</a>
+                        <a style="margin-right:3px" href="#" class="btn btn-dropbox"><i class="icofont icofont-error"></i>Out Of Stock</a>
+
+
+                    </div>
+
+
+                    <div class="card-header-right"><i class="icofont icofont-spinner-alt-5"></i></div>
+                </div>
+                <div class="card-block">
+                    <div class="">
+                        <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover table table-striped table-bordered ">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Issue Title</th>
+                                    <th>Series Number</th>
+                                    <th>Price</th>
+                                    <th>Condition</th>
+                                    <th>Date</th>
+                                    <th>Quantity</th>
+
+                                    <th>Re-Stock</th>
+                                    <th>Edit</th>
+                                    <th>Remove</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let stock of stocks">
+                                    <td>1</td>
+                                    <td>{{stock.username}}</td>
+                                    <td>R34FTFG</td>
+                                    <td>R456</td>
+                                    <td>Very Fine</td>
+                                    <td>12/02/2008</td>
+                                    <td>4</td>
+
+                                    <td><a class="text-center" href="#"><i class="icofont icofont-plus"></i></a></td>
+                                    <td><a href="#"><i class="icofont icofont-ui-edit"></i></a></td>
+                                    <td><a href="#"><i class="icofont icofont-ui-delete"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

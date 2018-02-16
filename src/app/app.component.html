@@ -1,0 +1,134 @@
+<div id="pcoded" class="pcoded">
+    <div class="pcoded-overlay-box"></div>
+    <div class="pcoded-container navbar-wrapper">
+        <nav class="navbar header-navbar pcoded-header">
+            <div class="navbar-wrapper">
+                <div class="navbar-logo">
+
+
+                    <a routerLink="/home">
+                        <img class="img-fluid" src="assets/files/assets/images/bane-logo.png" alt="" />
+                    </a>
+                    <a class="mobile-options">
+                        <i class="ti-more"></i>
+                    </a>
+                </div>
+                <div class="navbar-container container-fluid">
+
+                    <ul class="nav-right">
+
+                        <li class="header-notification">
+                            <a href="#!">
+                                <i class="ti-bell"></i>
+                                <span class="badge bg-c-pink"></span>
+                            </a>
+                            <ul class="show-notification">
+                                <li>
+                                    <h6>Notifications</h6>
+                                    <label class="label label-success">2</label>
+                                </li>
+                                <li>
+                                    <div class="media">
+
+                                        <div class="media-body">
+                                            <h5 class="notification-user">Re-Stock Approved</h5>
+                                            <p class="notification-msg">55 issues were successfully re-stocked</p>
+                                            <span class="notification-time">30 minutes ago</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="media">
+
+                                        <div class="media-body">
+                                            <h5 class="notification-user">Issue out-of-stock</h5>
+                                            <p class="notification-msg">Issue Spider-Man is out of stock</p>
+                                            <span class="notification-time">40 minutes ago</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="pcoded-main-container">
+            <div class="pcoded-wrapper">
+                <nav class="pcoded-navbar">
+                    <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                    <div class="pcoded-inner-navbar main-menu">
+                        <div class="">
+                            <div class="main-menu-header">
+                                <img class="img-40 img-radius" src="assets/files/assets/images/default-user.png" alt="User-Profile-Image">
+                                <div class="user-details">
+                                    <span>Lefa Mashele</span>
+                                    <span id="more-details">Admin<i class="ti-angle-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="main-menu-content">
+                                <ul>
+                                    <li class="more-details">
+
+                                        <a href="#"><i class="ti-layout-sidebar-left"></i>Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pcoded-search">
+                            <span class="searchbar-toggle"> </span>
+                            <hr style="margin-top: -15px">
+                        </div>
+                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Navigation</div>
+                        <ul class="pcoded-item pcoded-left-item">
+
+                            <li class="">
+                                <a routerLink="/home">
+                                    <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+
+                            <li class="">
+                                <a routerLink="/stockinventory" routerLinkActive="active">
+                                    <span class="pcoded-micon"><i class="ti-files"></i><b>D</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Stock Inventory</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </nav>
+                <div class="pcoded-content">
+                    <div class="pcoded-inner-content">
+
+                        <div class="main-body">
+                            <div class="page-wrapper">
+
+                                <!--PUT CONTENT HERE!!!!!!!!!!!!!!!!!!!!!! -->
+                                <!--PUT CONTENT HERE!!!!!!!!!!!!!!!!!!!!!! -->
+                                <!--PUT CONTENT HERE!!!!!!!!!!!!!!!!!!!!!! -->
+                                <!--PUT CONTENT HERE!!!!!!!!!!!!!!!!!!!!!! -->
+                                <!--PUT CONTENT HERE!!!!!!!!!!!!!!!!!!!!!! -->
+
+                                <router-outlet></router-outlet>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
